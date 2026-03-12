@@ -3,6 +3,7 @@ name: Ping GitHub Server At Minute 20 Every Hour
 on:
   schedule:
     - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 permissions: {}
 
