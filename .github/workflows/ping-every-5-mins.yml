@@ -1,0 +1,14 @@
+name: Ping GitHub Server Every 5 Minutes
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+permissions: {}
+
+jobs:
+  run-ping-to-github-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping GitHub server
+        run: ping -c 4 github.com
