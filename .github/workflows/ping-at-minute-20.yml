@@ -2,7 +2,7 @@ name: Ping GitHub Server At Minute 20 Every Hour
 
 on:
   schedule:
-    - cron: '40 3 * * *'
+    - cron: '*/5 * * * *'
 
 permissions: {}
 
